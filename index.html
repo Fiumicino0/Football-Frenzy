@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Football Frenzy Slot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="slot-container">
+    <h1>Football Frenzy</h1>
+    <canvas id="slot" width="300" height="200"></canvas>
+    <button id="spin">SPIN</button>
+    <p>Crediti: <span id="credits">1000</span></p>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
